@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Valley Carburator Co. | Call (818) 890-1267 | Pacoima, CA</title>
+<meta name="description" content="Contact Valley Carburator Co. at 10365 San Fernando Rd G, Pacoima CA 91331. Call (818) 890-1267. Ask for Luis or Angel. Carburetor experts serving all of Los Angeles.">
+<meta name="keywords" content="contact Valley Carburator, carburetor shop Pacoima phone, (818) 890-1267, San Fernando Road carburetor">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://valleycarburatorca.com/contact.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* ===== CONTACT PAGE ===== */
+.contact-section{padding:4rem 2rem 5rem;background:#f8f7f5}
+.contact-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+
+/* FORM */
+.contact-form-wrap{background:#fff;border-radius:12px;padding:2.25rem;border:1px solid var(--silver-light)}
+.form-title{font-family:var(--font-head);font-size:1.4rem;color:var(--navy);letter-spacing:0.04em;margin-bottom:0.25rem}
+.form-subtitle{font-size:0.88rem;color:var(--text-light);margin-bottom:1.75rem}
+.form-group{margin-bottom:1.25rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group label{display:block;font-family:var(--font-head);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-mid);margin-bottom:0.45rem}
+.form-group label .req{color:var(--red)}
+.form-group input,
+.form-group select,
+.form-group textarea{width:100%;padding:0.75rem 1rem;border:1.5px solid var(--silver-light);border-radius:6px;font-family:var(--font-body);font-size:0.95rem;color:var(--text-dark);background:#fff;transition:border-color var(--transition),box-shadow var(--transition);outline:none;-webkit-appearance:none}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(26,26,46,0.08)}
+.form-group input.valid,
+.form-group select.valid,
+.form-group textarea.valid{border-color:#27ae60}
+.form-group input.invalid,
+.form-group select.invalid,
+.form-group textarea.invalid{border-color:var(--red);box-shadow:0 0 0 3px rgba(192,57,43,0.1)}
+.form-group textarea{height:120px;resize:vertical}
+.form-group select{cursor:pointer}
+.error-msg{font-size:0.78rem;color:var(--red);margin-top:0.3rem;display:none}
+.error-msg.show{display:block}
+.submit-btn{width:100%;background:var(--red);color:#fff;font-family:var(--font-head);font-size:1rem;font-weight:600;letter-spacing:0.08em;padding:0.9rem 1.5rem;border:none;border-radius:6px;cursor:pointer;transition:all var(--transition);display:flex;align-items:center;justify-content:center;gap:10px;margin-top:0.5rem}
+.submit-btn:hover{background:var(--red-dark);transform:translateY(-1px)}
+.submit-btn:active{transform:scale(0.98)}
+.submit-btn.loading{pointer-events:none;opacity:0.8}
+.spinner{width:18px;height:18px;border:2px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;animation:spin 0.7s linear infinite;display:none}
+.spinner.show{display:block}
+@keyframes spin{to{transform:rotate(360deg)}}
+.success-msg{display:none;text-align:center;padding:2rem;background:#f0faf5;border:1px solid #27ae60;border-radius:8px}
+.success-msg.show{display:block}
+.success-msg h4{font-family:var(--font-head);color:#27ae60;font-size:1.2rem;margin-bottom:0.4rem}
+.success-msg p{font-size:0.9rem;color:var(--text-mid)}
+
+/* INFO SIDEBAR */
+.contact-info-wrap{display:flex;flex-direction:column;gap:1.5rem}
+.info-card{background:#fff;border-radius:12px;padding:1.75rem;border:1px solid var(--silver-light)}
+.info-card-title{font-family:var(--font-head);font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-light);margin-bottom:1.1rem}
+.big-phone-link{display:block;font-family:var(--font-head);font-size:2.4rem;font-weight:700;color:var(--red);letter-spacing:0.02em;line-height:1;margin-bottom:0.4rem;transition:color var(--transition)}
+.big-phone-link:hover{color:var(--red-dark)}
+.phone-sub{font-size:0.85rem;color:var(--text-light)}
+.contact-detail-row{display:flex;align-items:flex-start;gap:12px;padding:0.75rem 0;border-bottom:1px solid #f0f0f0}
+.contact-detail-row:last-child{border-bottom:none}
+.detail-icon{width:36px;height:36px;background:#f8f7f5;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem}
+.detail-text strong{display:block;font-family:var(--font-head);font-size:0.82rem;letter-spacing:0.06em;color:var(--navy);margin-bottom:2px}
+.detail-text span,.detail-text a{font-size:0.9rem;color:var(--text-mid);line-height:1.5}
+.detail-text a{color:var(--red);transition:color var(--transition)}
+.detail-text a:hover{color:var(--red-dark)}
+.specialist-row{display:flex;gap:1rem}
+.specialist-chip{flex:1;background:var(--navy);border-radius:8px;padding:1rem;text-align:center}
+.specialist-initial{font-family:var(--font-head);font-size:1.5rem;color:#fff;display:block}
+.specialist-name{font-family:var(--font-head);font-size:0.85rem;color:var(--red);letter-spacing:0.06em;margin-top:0.25rem}
+.specialist-title{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:2px}
+.map-container{border-radius:10px;overflow:hidden;border:1px solid var(--silver-light)}
+.map-container iframe{display:block;width:100%;height:220px;border:none}
+.map-fallback{background:#f0f0f0;height:220px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.75rem;text-align:center;padding:1rem}
+.map-fallback p{font-size:0.85rem;color:var(--text-light)}
+.map-fallback a{color:var(--red);font-size:0.85rem;font-weight:600}
+
+/* Hours */
+.hours-section{padding:3rem 2rem 5rem;background:#fff}
+.hours-inner{max-width:1200px;margin:0 auto}
+.hours-card{background:#f8f7f5;border-radius:12px;padding:2rem;border:1px solid var(--silver-light);max-width:600px}
+.hours-table{width:100%;border-collapse:collapse}
+.hours-table tr{border-bottom:1px solid var(--silver-light)}
+.hours-table tr:last-child{border-bottom:none}
+.hours-table td{padding:0.75rem 0;font-size:0.92rem}
+.hours-table td:first-child{font-family:var(--font-head);font-size:0.88rem;letter-spacing:0.06em;color:var(--navy);width:45%}
+.hours-table td:last-child{color:var(--text-mid);text-align:right}
+.hours-table tr.today td{color:var(--red)}
+.hours-table tr.today td:first-child::after{content:' ← Today';font-size:0.75rem;color:var(--red);font-style:italic}
+.closed{color:var(--text-light) !important}
+
+@media(max-width:900px){
+  .contact-inner{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .form-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">⚙️</div>
+    <div class="nav-logo-text">Valley Carburator<span>Co. — Pacoima, CA</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+  <a href="tel:+18188901267" class="nav-cta">📞 (818) 890-1267</a>
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="tel:+18188901267" class="mob-cta">📞 Call (818) 890-1267</a>
+</div>
+
+<main>
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Home</a> / <span>Contact Us</span></p>
+    <h1>Contact <em>Us</em></h1>
+  </div>
+</header>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section" aria-label="Contact form and information">
+  <div class="contact-inner">
+
+    <!-- LEFT: FORM -->
+    <div class="contact-form-wrap reveal">
+      <h2 class="form-title">Send Us a Message</h2>
+      <p class="form-subtitle">We'll get back to you as soon as possible. Or just call — it's faster!</p>
+
+      <div id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Name <span class="req">*</span></label>
+            <input type="text" id="fname" name="name" placeholder="Your full name" autocomplete="name">
+            <p class="error-msg" id="fname-err">Please enter your name.</p>
+          </div>
+          <div class="form-group">
+            <label for="fphone">Phone <span class="req">*</span></label>
+            <input type="tel" id="fphone" name="phone" placeholder="(xxx) xxx-xxxx" autocomplete="tel">
+            <p class="error-msg" id="fphone-err">Please enter a valid phone number.</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="femail">Email Address</label>
+          <input type="email" id="femail" name="email" placeholder="your@email.com" autocomplete="email">
+          <p class="error-msg" id="femail-err">Please enter a valid email.</p>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fmake">Vehicle Make</label>
+            <select id="fmake" name="make">
+              <option value="">Select make...</option>
+              <option>BMW</option>
+              <option>Toyota</option>
+              <option>Volkswagen</option>
+              <option>Chevrolet</option>
+              <option>Ford</option>
+              <option>Nissan</option>
+              <option>Cadillac</option>
+              <option>Honda</option>
+              <option>Dodge</option>
+              <option>Forklift / Industrial</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmodel">Model / Year</label>
+            <input type="text" id="fmodel" name="model" placeholder="e.g. Camaro 1972">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="fservice">Service Needed</label>
+          <select id="fservice" name="service">
+            <option value="">Select a service...</option>
+            <option>Carburetor Rebuild</option>
+            <option>Wholesale Inquiry</option>
+            <option>Retail Purchase</option>
+            <option>Exchange Program</option>
+            <option>Forklift Carburetor</option>
+            <option>Industrial Carburetor</option>
+            <option>General Question</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="fmsg">Message <span class="req">*</span></label>
+          <textarea id="fmsg" name="message" placeholder="Describe what you need — carburetor type, vehicle info, urgency, etc."></textarea>
+          <p class="error-msg" id="fmsg-err">Please enter a message.</p>
+        </div>
+        <button type="button" class="submit-btn" id="submit-btn" onclick="submitForm()">
+          <span id="btn-text">Send Message</span>
+          <span class="spinner" id="spinner"></span>
+        </button>
+      </div>
+
+      <div class="success-msg" id="success-msg">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem">✅</div>
+        <h4>Message Received!</h4>
+        <p>Thank you for reaching out. Luis or Angel will follow up with you shortly.<br>For urgent needs, please call us directly at <a href="tel:+18188901267" style="color:var(--red)">(818) 890-1267</a>.</p>
+      </div>
+    </div>
+
+    <!-- RIGHT: INFO -->
+    <div class="contact-info-wrap reveal">
+
+      <div class="info-card">
+        <p class="info-card-title">Call Us Directly</p>
+        <a href="tel:+18188901267" class="big-phone-link">(818) 890-1267</a>
+        <p class="phone-sub">Fastest way to get help — most calls answered immediately</p>
+      </div>
+
+      <div class="info-card">
+        <p class="info-card-title">Our Specialists</p>
+        <div class="specialist-row">
+          <div class="specialist-chip">
+            <span class="specialist-initial">L</span>
+            <p class="specialist-name">Luis</p>
+            <p class="specialist-title">Wholesale &amp; Parts</p>
+          </div>
+          <div class="specialist-chip">
+            <span class="specialist-initial">A</span>
+            <p class="specialist-name">Angel</p>
+            <p class="specialist-title">Rebuild &amp; Retail</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <p class="info-card-title">Location &amp; Contact</p>
+        <div class="contact-detail-row">
+          <div class="detail-icon">📍</div>
+          <div class="detail-text">
+            <strong>Address</strong>
+            <span>10365 San Fernando Rd, "G"<br>Pacoima, CA 91331</span>
+          </div>
+        </div>
+        <div class="contact-detail-row">
+          <div class="detail-icon">📞</div>
+          <div class="detail-text">
+            <strong>Phone</strong>
+            <a href="tel:+18188901267">(818) 890-1267</a>
+          </div>
+        </div>
+        <div class="contact-detail-row">
+          <div class="detail-icon">🕐</div>
+          <div class="detail-text">
+            <strong>Hours</strong>
+            <span>Mon–Fri: 8am–5pm · Sat: 8am–2pm<br>Sunday: Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.6!2d-118.4097!3d34.2614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2953d3f9e9a9f%3A0x0!2s10365+San+Fernando+Rd+G%2C+Pacoima%2C+CA+91331!5e0!3m2!1sen!2sus!4v1700000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Valley Carburator Co. location map"
+          aria-label="Map showing Valley Carburator Co. at 10365 San Fernando Rd G, Pacoima CA">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOURS TABLE -->
+<section class="hours-section" aria-label="Hours of operation">
+  <div class="hours-inner">
+    <div class="reveal">
+      <p class="section-tag">Hours of Operation</p>
+      <h2 class="section-title" style="margin-bottom:1.5rem">When We're <em>Open</em></h2>
+    </div>
+    <div class="hours-card reveal">
+      <table class="hours-table" aria-label="Business hours">
+        <tbody>
+          <tr id="row-mon"><td>Monday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr id="row-tue"><td>Tuesday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr id="row-wed"><td>Wednesday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr id="row-thu"><td>Thursday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr id="row-fri"><td>Friday</td><td>8:00 AM – 5:00 PM</td></tr>
+          <tr id="row-sat"><td>Saturday</td><td>8:00 AM – 2:00 PM</td></tr>
+          <tr id="row-sun"><td>Sunday</td><td class="closed">Closed</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner reveal" aria-label="Call to action">
+  <h2>Don't Wait — Call Us Now</h2>
+  <p>Most carburetors rebuilt in 3 hours. Walk-ins welcome at our Pacoima shop.</p>
+  <a href="tel:+18188901267" class="btn-outline-white">Call (818) 890-1267</a>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:1rem">
+        <div class="nav-logo-icon">⚙️</div>
+        <div class="nav-logo-text">Valley Carburator<span>Co. — Pacoima, CA</span></div>
+      </div>
+      <p>Carburetor wholesale, retail, and rebuild specialists serving Pacoima and all of Los Angeles. Ask for Luis or Angel.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Wholesale</a></li>
+        <li><a href="services.html">Retail</a></li>
+        <li><a href="services.html">Rebuilt in 3 Hours</a></li>
+        <li><a href="services.html">Forklift</a></li>
+        <li><a href="services.html">Exchange Program</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>10365 San Fernando Rd, "G"<br>Pacoima, CA 91331</p>
+      <p style="margin-top:0.75rem"><a href="tel:+18188901267" class="footer-phone">(818) 890-1267</a></p>
+      <p style="margin-top:0.75rem;font-size:0.85rem">Ask for <strong style="color:#fff">Luis</strong> or <strong style="color:#fff">Angel</strong></p>
+      <p style="margin-top:1rem;font-size:0.82rem;color:rgba(255,255,255,0.4)">Mon–Fri: 8am–5pm<br>Sat: 8am–2pm</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Valley Carburator Co. All rights reserved. | 10365 San Fernando Rd "G", Pacoima, CA 91331</p>
+    <div class="footer-badges">
+      <span class="footer-badge">Wholesale</span>
+      <span class="footer-badge">Retail</span>
+      <span class="footer-badge">3-Hr Rebuild</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+<script>
+// Highlight today's hours
+const days = ['row-sun','row-mon','row-tue','row-wed','row-thu','row-fri','row-sat'];
+const todayRow = document.getElementById(days[new Date().getDay()]);
+if (todayRow) todayRow.classList.add('today');
+
+// Form validation & submit
+function validateField(input, errId, condition) {
+  const err = document.getElementById(errId);
+  if (!condition) {
+    input.classList.remove('valid'); input.classList.add('invalid');
+    if (err) err.classList.add('show');
+    return false;
+  }
+  input.classList.remove('invalid'); input.classList.add('valid');
+  if (err) err.classList.remove('show');
+  return true;
+}
+
+// Live validation
+document.getElementById('fname').addEventListener('blur', function() {
+  validateField(this, 'fname-err', this.value.trim().length > 1);
+});
+document.getElementById('fphone').addEventListener('blur', function() {
+  validateField(this, 'fphone-err', this.value.trim().length > 6);
+});
+document.getElementById('femail').addEventListener('blur', function() {
+  if (this.value.trim()) validateField(this, 'femail-err', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.value));
+});
+document.getElementById('fmsg').addEventListener('blur', function() {
+  validateField(this, 'fmsg-err', this.value.trim().length > 5);
+});
+
+function submitForm() {
+  const name = document.getElementById('fname');
+  const phone = document.getElementById('fphone');
+  const email = document.getElementById('femail');
+  const msg = document.getElementById('fmsg');
+  let valid = true;
+  if (!validateField(name, 'fname-err', name.value.trim().length > 1)) valid = false;
+  if (!validateField(phone, 'fphone-err', phone.value.trim().length > 6)) valid = false;
+  if (email.value.trim() && !validateField(email, 'femail-err', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value))) valid = false;
+  if (!validateField(msg, 'fmsg-err', msg.value.trim().length > 5)) valid = false;
+  if (!valid) return;
+
+  const btn = document.getElementById('submit-btn');
+  const spinner = document.getElementById('spinner');
+  const btnText = document.getElementById('btn-text');
+  btn.classList.add('loading');
+  spinner.classList.add('show');
+  btnText.textContent = 'Sending...';
+
+  setTimeout(() => {
+    document.getElementById('contact-form').style.display = 'none';
+    document.getElementById('success-msg').classList.add('show');
+  }, 1800);
+}
+</script>
+</body>
+</html>
