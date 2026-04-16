@@ -1,4 +1,4 @@
-/* ===== VALLEY CARBURATOR CO. — SHARED JS ===== */
+/* ===== Valley Carburetor CO. — SHARED JS ===== */
 
 // Navbar scroll behavior
 const navbar = document.querySelector('.navbar');
